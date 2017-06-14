@@ -1,0 +1,447 @@
+/* Standard Reset */
+
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+img { 
+    width: 100%;
+    height: auto; 
+    display: block;
+}
+
+
+
+/* Main Headers & Paragraphs */
+
+h1 {
+    font-size: 60px;
+    font-family: 'Francois One', sans-serif;
+}
+
+h2 {
+    font-size: 50px;
+    font-family: 'Francois One', sans-serif;
+    margin-bottom: 22px;
+}
+
+h3 {
+    text-align: center;
+    padding-top: 32%;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 30px;
+}
+
+hr {
+    width: 100px;
+    height: 3px;
+    float: left;
+    color: #000;
+    background: #000;
+    font-size: 0;
+    border: 0;
+}
+
+
+/* Main Containers == !Important */
+
+.inner {
+    outline: none;
+    position: relative;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+}
+.vertical-center-landing {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-47%);
+}
+.vertical-left {
+    text-align: left;
+    width: 100%;
+    position: absolute;
+    top: 51%;
+    transform: translateY(-47%);
+}
+
+/* These are to keep the text separate
+   from the images -- 
+   Easier to position */
+/* In the end I had no choice but to customise
+   these individually. The Scrollify
+   sectioning makes it dificult to 
+   position anything... */
+
+
+.vertical-right-location {
+    text-align: right;
+    width: 100%;
+    position: absolute;
+    top: 53.5%;
+    transform: translateY(-47%);
+}
+.vertical-right-population {
+    text-align: right;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-47%);
+}
+.vertical-right-capital {
+    text-align: right;
+    width: 100%;
+    position: absolute;
+    top: 54%;
+    transform: translateY(-47%);
+}
+.vertical-right-weather {
+    text-align: right;
+    width: 100%;
+    position: absolute;
+    top: 51.5%;
+    transform: translateY(-47%);
+}
+
+
+
+/* Navigtaion Menu */
+
+.nav-container {
+    background-color: #000;
+    position: fixed;
+    z-index: 100;
+    height: 75px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    overflow: hidden;
+}
+ul.links {
+    display: flex;
+    justify-content: flex-start;
+}
+li {
+    margin-top: 10px;
+    list-style: none;
+}
+li a {
+    color: #fff;
+    font-family:'Open Sans', sans-serif;
+    text-decoration: none;
+    margin-right: 50px;
+}
+.country-select {
+    margin-left: 675px;
+    margin-top: 10px;
+}
+a.usa {
+    font-family:'Open Sans', sans-serif;
+    text-decoration: none;
+    color: #fff;
+}
+li a:hover {
+    color: rgb(255, 143, 104);
+    -webkit-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+a.active {
+    background-color: transparent !important;
+    color: rgb(255, 83, 13) !important;
+}
+
+
+
+/* Main Website */
+
+.location {
+    background-color: hsl(204, 70%, 95%);
+}
+.population{
+    background-color: hsl(37, 90%, 95%);
+}
+.capital{
+    background-color: hsl(6, 78%, 96%);
+}
+.weather{
+    background-color: hsl(48, 89%, 95%);
+}
+
+
+
+#wrap {
+    height:100%;
+    width:100%;
+    background-size: cover;
+    background: url(http://addtwitter-followers.com/wp-content/themes/twentyten/images/bck.jpg) top no-repeat #94E3F4;
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    animation: animatedBackground 150s linear infinite;
+    -ms-animation: animatedBackground 150s linear infinite;
+    -moz-animation: animatedBackground 150s linear infinite;
+    -webkit-animation: animatedBackground 150s linear infinite;
+}
+
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+@-webkit-keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+@-ms-keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+@-moz-keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+.map-gif {
+    height: 350px;
+    width: 500px;
+    float: right;
+}
+.chart{
+    float: right;
+    height: 80%;
+    width: 80%;
+    margin-right: -310px;
+}
+
+
+/* Slideshow containers */
+
+.main-slide-container {
+    margin-top: 50px;
+    float: right;
+    height: 500px;
+    width: 650px;
+}
+.slideshow-container {
+    max-width: 750px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Position the "prev button" to the left */
+
+.prev{
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover */
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+
+.text {
+    font-family: 'Open Sans', sans-serif;
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/4) */
+
+.numbertext {
+    font-family: 'Open Sans', sans-serif;
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.presidents {
+    background-image: url(https://www.brandicarpet.com/wp-content/uploads/2015/04/Transparent-American-Flag.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* Main parent container for
+   president images */
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 16%;
+}
+
+/* Images */
+
+.images {
+    border: 8px solid #000;
+    width: 260px;
+    height: 400px;
+    margin-right: 50px;
+}
+.images-last{
+    border: 8px solid #000;
+    width: 260px;
+    height: 400px;
+    margin-right: 0 !important;
+}
+
+/*Images increase by 10% 
+*Hover has a margin top of -8%
+*to halve the margin-top of 16%
+*on the image-row container
+*/
+
+.images:hover {
+    width: 286px;
+    height: 451px;
+    margin-top: -8%;
+    -webkit-transition: 0.2s ease;
+    -ms-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    transition: 0.2s ease;
+}
+.images-last:hover{
+    width: 286px;
+    height: 451px;
+    margin-top: -8%;
+    -webkit-transition: 0.2s ease;
+    -ms-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    transition: 0.2s ease;
+}
+
+.katrina{
+    float: right;
+    height: 50%;
+    width: 50%;
+}
+
+
+
+/* Preloader Test
+
+div#load_screen{
+    background: #000;
+    opacity: 1;
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    width: 100%;
+    height: 925px;
+}
+div#load_screen > div#loading{
+    width: 120px;
+    height: 120px;
+    margin: 300px auto;
+} */
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	  <meta charset="utf-8">
+    <meta name="viewport" content ="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Geography, nature, facts, world, maps, interactivity">
+    <meta name="description" content="Want to learn about the world around you? Look no further as this website offers you intersting facts about every nation and culture.">
+    <!-- CSS Links -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link href="css/aos.css" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Francois+One|Open+Sans" rel="stylesheet">
+    <!-- FavIcon -->
+    <link rel="icon" type="image/png" href="images/favicon-globe.png">
+
+        <title>GoGeography Kids</title>
+</head>
+
+	<body style="overflow: hidden;"><!-- Allows me to push elements outside of page -->
+
+		<!-- Preloader (test // it works) 
+
+		    <div id="load_screen">
+			   <div id="loading">
+                  <img src="images/globe-loader.png">
+		       </div>
+	        </div> -->
+
+    <!-- Music --><embed src="music/bg-music.mp3" id="myaudio" autostart="true" loop="true"></embed>
+        
+
+		<!-- Landing Page 
+		     Set the height to 925px to fill the viewport height of laptop screen //
+		     hopefully it should work on bigger screens -->
+
+	            
+		<section class="panel landing" id="start" data-section-name="first" style="height: 925px;">
+
+			<!-- Smooth Scrolling navigation & jQuery active -->
+
+			<nav>
+
+        	<div class="nav-container" role="navigation">
+        		<ul class ="links">
+        			<li><a class="active" href="#start">START</a></li>
+        			<li><a href="#loc">LOCATION</a></li>
+        			<li><a href="#pop">POPULATION</a></li>
+        			<li><a href="#cap">CAPITAL</a></li>
+        			<li><a href="#pres">PRESIDENTS</a></li>
+        			<li><a href="#wev">WEATHER</a></li>
+        			<div class="country-select">
+        			    <a class="usa" href="#">USA</a>
+        			</div>
+
+                </ul>
+
+        	</div>
+
+        	   </nav>
+
+      <!-- Landing Page -->
+
+			<div id="wrap">
+ 
+                <div class="inner animated bounceInDown">
+				    <div class="vertical-center-landing">
+					    <h1>Hello there...</h1>
+				    </div>
+				        <h3>Welcome to the United States</h3>
+				</div>
+			</div>
+	    
+	    </section><!-- End of landing page -->
+
+	    
+	    <!-- Location -->
+
+        <section class="panel location" id="loc" data-section-name="second" style="height: 925px;">
+      <!-- Start of main content -->
+      <!-- Trigger the plugin using data-aos = "" -->
+
+			<div class="inner">
+        	
+				<div class="vertical-left">
+					<h2 data-aos="fade-right" data-aos-duration="500">North America</h2>
+
+					<hr />
+          <!-- Specify Animation // Set Duration -->
+					<div class="paragraph-container" data-aos="fade-up" data-aos-duration="1000">
+
+					<p>The country is located within the continent known as 
+					   <br />
+                       North America, bordering both Canada (north)
+                       <br />
+                       and Mexico (south).</p>
+
+                    <p>From East to West, the distance is roughly 2,092 miles,
+                       <br />
+                       not including Alaska or Hawaii, which aren't apart
+                       <br />
+                       of the mainland.</p>
+
+                   </div>
+                </div>
+				  <div class="vertical-right-location">
+					  <img class="map-gif" src="images/location-gif.gif" alt="" />
+				   </div>
+			    </div>
+		    
+		</section>
+
+		<!-- Population -->
+
+		<section class="panel population" id="pop" data-section-name="third" style="height: 925px;">
+
+			<div class="inner">
+				<div class="vertical-left">
+				
+				    <h2 data-aos="fade-right" data-aos-duration="500">Population</h2>
+
+					<hr />
+
+					<div class="paragraph-container" data-aos="fade-up" data-aos-duration="1000">
+
+					<p>With a country as large as the U.S, the vast cultural
+					   <br />
+                       differences that span across the nation allow for some
+                       <br />
+                       amazing cultural hubs.</p>
+
+                    <p>From the Jamaican districts of New York, the Latin restaurants
+                       <br />
+                       of Miami and proud French and African communuties of the 
+                       <br />
+                       South, America is definitely as diverse as they come.</p>
+				   </div>
+				  <div class="vertical-right-population">
+					   <img class="chart" src="images/pie-chart.gif">
+
+				     </div>
+			    </div>
+		</section>
+
+		<!-- Capital -->
+
+		<section class="panel capital" id="cap" data-section-name="fourth" style="height: 925px;">
+
+		    <div class="inner">
+
+		    	<div class="vertical-left">
+		    		<h2 data-aos="fade-right" data-aos-duration="500">Washington D.C</h2>
+
+					<hr />
+
+				<div class="paragraph-container" data-aos="fade-up" data-aos-duration="1000">
+
+
+					<p>Is the capital city of the United States, and is also
+					   <br />
+                       home to the president, who lives in the white house,
+                       <br />
+                       as well as many other important memorials, museums
+                       <br />
+                       and government buildings.</p>
+  
+                    <p>Use the interactive slideshow to see
+                       <br />
+                       more of this interesting city!</p>
+
+                    </div>
+
+                </div>
+				
+				<div class="vertical-right-capital">
+
+			<!-- Slideshow section // Sits on the right side of the Capital info page -->
+
+					<div class="main-slide-container">
+                      <div class="slideshow-container">
+                        <!-- Images // numbered text-->
+                        <div class="mySlides fade">
+                           <div class="numbertext">1 / 4</div>
+                             <img src="images/white-house.jpg" style="width:100%">
+                               <div class="text">The White House</div>
+                                 </div>
+
+                                 <div class="mySlides fade">
+                               <div class="numbertext">2 / 4</div>
+                            <img src="images/memorial.jpg" style="width:100%">
+                         <div class="text">Memorial</div>
+                      </div>
+
+                     <div class="mySlides fade">
+                       <div class="numbertext">3 / 4</div>
+                         <img src="images/abe.jpg" style="width:100%">
+                           <div class="text">Lincoln Memorial</div>
+                             </div>
+                             <div class="mySlides fade">
+                          <div class="numbertext">4 / 4</div>
+                       <img src="images/supreme-court-building.jpg" style="width:100%">
+                    <div class="text">Supreme Court</div>
+                 </div>
+
+                 <!-- Arrows -->
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+             <br>
+
+             <!-- Indicators -->
+
+             <div style="text-align:center">
+               <span class="dot" onclick="currentSlide(1)"></span> 
+               <span class="dot" onclick="currentSlide(2)"></span> 
+               <span class="dot" onclick="currentSlide(3)"></span> 
+               <span class="dot" onclick="currentSlide(3)"></span>
+             </div>
+		       </div>
+			      </div>
+		            </div>
+		</section>
+
+		<!-- Presidents -->
+
+		<section class="panel presidents" id="pres" data-section-name="fifth" style="height: 925px;">
+
+		    <div class="inner">
+
+		    	<div class="image-row">
+		        <a href="https://en.wikipedia.org/wiki/Bill_Clinton" target="_blank"><img class ="images" title="Bill Clinton" src="images/bill-man.jpg" alt="" />
+		           </a>
+		           <a href="https://en.wikipedia.org/wiki/George_W._Bush" target="_blank"><img class ="images" title="George W.Bush" src="images/steel-beams.jpg" alt="" />
+		             </a>
+		           <a href="https://en.wikipedia.org/wiki/Barack_Obama" target="_blank"><img class ="images" title="Barack Obama" src="images/obamacare.jpg" alt="" />
+		             </a>
+		           <a href="https://en.wikipedia.org/wiki/Donald_Trump" target="_blank"><img class ="images-last" title="Donald Trump" src="images/fake-news.jpg" alt="" />
+		             </a>
+		        </div>
+             </div>
+		</section>
+
+		<!-- Weather -->
+
+		<section class="panel weather" id="wev" data-section-name="sixth" style="height: 925px;">
+		        
+		    <div class="inner">
+		    	<div class="vertical-left">
+
+		    		<h2 data-aos="fade-right" data-aos-duration="500">Weather</h2>
+
+					<hr />
+
+					<div class="paragraph-container" data-aos="fade-up" data-aos-duration="1000">
+
+					<p>Due to the geographical location of the country,
+					   <br />
+                       interesting weather patterns have developed across
+                       <br />
+                       the mainland, such as the tropical heat on the South East,
+                       </br />
+                       up to the famous Tornado Alley.</p>
+
+                    <p>Hurricane Katrina was one of the worst hurricanes in U.S
+                       <br />
+                       history, destroying New Orleans in 2005.</p>
+
+				  </div>
+
+          <div class="vertical-right-weather">
+            <img class="katrina" src="images/katrina.jpg">
+
+              </div>
+
+		      </div>
+
+		</section><!-- End -->
+
+
+<!-- Load CDN first -->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+
+<!-- If CDN fails to load, serve up the local version -->  
+<script>window.jQuery || document.write('<script src="js/jquery-3.2.1.js"><\/script>');</script>
+<script src="js/jquery.js"></script>
+<script src="js/script.js"></script>
+
+<!-- Add plugins here -->
+<script src="js/plugins/jquery.scrollify.js"></script>
+<script src="js/plugins/aos.js"></script>
+
+<script>
+    $(function() {
+    AOS.init();
+    $(window).on('load', function() {
+    AOS.refresh();
+  });
+}); //Initialise the plugin as a function
+</script>
+
+		
+	</body>
+
+</html>
